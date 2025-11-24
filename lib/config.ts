@@ -22,17 +22,17 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
     prompt: "Walk me through the Collective 54 playbook",
   },
   {
-    icon: "circle-info",
+    icon: "info",
     label: "Membership basics",
     prompt: "How does membership in Collective 54 work?",
   },
   {
-    icon: "sparkles",
+    icon: "sparkle",
     label: "Personalized help",
     prompt: "Recommend resources based on my role",
   },
   {
-    icon: "clipboard",
+    icon: "calendar",
     label: "Upcoming events",
     prompt: "What events are happening soon?",
   },
@@ -63,13 +63,14 @@ export const COMPOSER_OPTIONS: ChatKitOptions["composer"] = {
       label: "Collective resources",
       shortLabel: "Resources",
       placeholderOverride: "Search Collective 54 resources",
-      icon: "archive",
+      icon: "notebook",
       pinned: false,
     },
   ],
 };
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
+  colorScheme: theme,
   color: {
     accent: {
       primary: "#B3421A",

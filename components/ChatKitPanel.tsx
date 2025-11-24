@@ -4,10 +4,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { ChatKit, useChatKit } from "@openai/chatkit-react";
 import {
   STARTER_PROMPTS,
-  PLACEHOLDER_INPUT,
   GREETING,
   CREATE_SESSION_ENDPOINT,
   WORKFLOW_ID,
+  COMPOSER_OPTIONS,
   getThemeConfig,
 } from "@/lib/config";
 import { ErrorOverlay } from "./ErrorOverlay";
@@ -271,13 +271,7 @@ export function ChatKitPanel({
       greeting: GREETING,
       prompts: STARTER_PROMPTS,
     },
-    composer: {
-      placeholder: PLACEHOLDER_INPUT,
-      attachments: {
-        // Enable attachments
-        enabled: true,
-      },
-    },
+    composer: COMPOSER_OPTIONS,
     threadItemActions: {
       feedback: false,
     },

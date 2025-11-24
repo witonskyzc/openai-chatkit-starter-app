@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import { ChatKitPanel, type FactAction } from "@/components/ChatKitPanel";
-import { useColorScheme } from "@/hooks/useColorScheme";
+import type { ColorScheme } from "@/hooks/useColorScheme";
 
 export default function App() {
-  const { scheme, setScheme } = useColorScheme();
+  const theme: ColorScheme = useMemo(() => "light", []);
 
   const handleWidgetAction = useCallback(async (action: FactAction) => {
     if (process.env.NODE_ENV !== "production") {
@@ -23,10 +23,10 @@ export default function App() {
     <main className="box-border flex h-screen flex-col items-center justify-center bg-white p-4 sm:p-6 md:p-8 lg:p-10">
       <div className="mx-auto w-full max-w-5xl">
         <ChatKitPanel
-          theme={scheme}
+          theme={theme}
           onWidgetAction={handleWidgetAction}
           onResponseEnd={handleResponseEnd}
-          onThemeRequest={setScheme}
+          onThemeRequest={() => {}}
         />
       </div>
     </main>

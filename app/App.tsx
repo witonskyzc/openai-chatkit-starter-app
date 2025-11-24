@@ -20,7 +20,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-slate-100 px-4 py-10 sm:py-12 md:py-16 lg:py-20 dark:bg-slate-950">
+    <main className="box-border flex h-[90vh] flex-col items-center justify-center bg-slate-100 px-4 py-8 sm:py-10 md:py-12 lg:py-16 dark:bg-slate-950">
       <div className="mx-auto w-full max-w-5xl">
         <ChatKitPanel
           theme={scheme}

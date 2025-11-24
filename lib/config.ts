@@ -13,28 +13,33 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
     icon: "circle-question",
-    label: "What is ChatKit?",
-    prompt: "What is ChatKit?",
+    label: "What is Collective 54?",
+    prompt: "What is Collective 54?",
   },
   {
-    icon: "book-open",
-    label: "Show me the playbook",
-    prompt: "Walk me through the Collective 54 playbook",
+    icon: "profile",
+    label: "Is this for me?",
+    prompt: "Is Collective 54 right for me?",
   },
   {
-    icon: "info",
-    label: "Membership basics",
-    prompt: "How does membership in Collective 54 work?",
+    icon: "chart",
+    label: "How much does it cost?",
+    prompt: "How much does membership cost?",
   },
   {
-    icon: "sparkle",
-    label: "Personalized help",
-    prompt: "Recommend resources based on my role",
+    icon: "lightbulb",
+    label: "How does it work?",
+    prompt: "How does Collective 54 membership work?",
   },
   {
-    icon: "calendar",
-    label: "Upcoming events",
-    prompt: "What events are happening soon?",
+    icon: "notebook",
+    label: "Resources",
+    prompt: "What Collective 54 resources can I use?",
+  },
+  {
+    icon: "phone",
+    label: "Book a call",
+    prompt: "Can I book a call with someone?",
   },
 ];
 

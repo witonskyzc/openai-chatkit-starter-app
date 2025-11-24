@@ -20,7 +20,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="box-border flex h-screen flex-col items-center justify-center bg-[#00326F] p-4 sm:p-6 md:p-8 lg:p-10">
+    <main className="box-border flex h-screen flex-col items-center justify-center bg-white p-4 sm:p-6 md:p-8 lg:p-10">
       <div className="mx-auto w-full max-w-5xl">
         <ChatKitPanel
           theme={scheme}

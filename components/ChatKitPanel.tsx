@@ -338,7 +338,10 @@ export function ChatKitPanel({
   }
 
   return (
-    <div className="relative flex h-[90vh] w-full rounded-2xl flex-col overflow-hidden bg-white shadow-sm transition-colors dark:bg-slate-900">
+    <div
+      className="relative flex w-full rounded-2xl flex-col overflow-hidden bg-white shadow-sm transition-colors dark:bg-slate-900"
+      style={{ height: "min(90vh, calc(100vh - 5rem))" }}
+    >
       <ChatKit
         key={widgetInstanceKey}
         control={chatkit.control}
